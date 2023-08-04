@@ -49,6 +49,32 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'logout'
 LOGIN_URL = 'login'
 
+CORS_ALLOW_ALL_ORIGINS=True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://studentslearning-production-4f37.up.railway.app",
+]
+
+CORS_ALLOW_METHODS = [
+'DELETE',
+'GET',
+'OPTIONS',
+'PATCH',
+'POST',
+'PUT',
+]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
